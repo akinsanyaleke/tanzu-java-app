@@ -1,0 +1,16 @@
+apiVersion: kappctrl.k14s.io/v1alpha1
+kind: App
+metadata:
+  name: tanzu-java-web-app-workload
+  namespace: default
+spec:
+  serviceAccountName: default
+  fetch:
+    - git:
+        url: https://github.com/akinsanyaleke/ops-tanzu-java-web-app
+        ref: origin/workload
+        #subPath: ns-rbac
+  template:
+    - ytt: {}
+  deploy:
+    - kapp: {}
