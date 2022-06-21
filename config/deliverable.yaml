@@ -1,0 +1,16 @@
+apiVersion: carto.run/v1alpha1
+kind: Deliverable
+metadata:
+  namespace: default
+  name: tanzu-java-web-app
+  labels:
+    app.kubernetes.io/component: deliverable
+    app.kubernetes.io/part-of: tanzu-java-web-app
+    app.tanzu.vmware.com/deliverable-type: web
+spec:
+  serviceAccountName: default
+  source:
+    git:
+      ref:
+        branch: deployment
+      url: https://github.com/akinsanyaleke/ops-tanzu-java-web-app
