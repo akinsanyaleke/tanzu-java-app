@@ -2,7 +2,7 @@ server:
   port: 8082
 spring:
   application:
-    name: tanzu-java-web-app-1
+    name: tanzu-java-web-app
 management:
   endpoints:
     web:
