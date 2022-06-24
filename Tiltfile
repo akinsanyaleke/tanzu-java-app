@@ -1,4 +1,4 @@
-SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='leke213.azurecr.io/tanzu-java-web-app')
+SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='docker.io/leke213/tanzu-java-web-app')
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
 NAMESPACE = os.getenv("NAMESPACE", default='default')
 allow_k8s_contexts('az')
