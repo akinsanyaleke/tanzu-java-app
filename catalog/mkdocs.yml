@@ -1,8 +1,0 @@
-site_name: 'tanzu-java-web-app catalog'
-
-nav:
-  - Home: index.md
-  - Adding Documentation: add-docs.md
-
-plugins:
-  - techdocs-core
