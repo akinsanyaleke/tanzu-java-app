@@ -11,7 +11,7 @@ This is a sample of a Java Spring app that works with Tilt and the Tanzu Applica
 ## Application Live View
 The workload is set up by default to autoconfigure the actuators. This results in that the Spring Actuators are available at TCP port 8081 and will be used by Application Live View.
 Application Live View allows you see all health metrics in the TAP GUI. If you would like to have the Actuators available at TCP port 8080 you can set the
-annotation `apps.tanzu.vmware.com/auto-configure-actuators` to `false`.
+annotation `apps.tanzu.vmware.com/auto-configure-actuators` to `false`..
 
 ## Running the sample
 
